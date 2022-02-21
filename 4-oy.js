@@ -1,5 +1,5 @@
 // homework 1
-/*const readline = require('readline'), rl = readline.createInterface({ input: process.stdin, output: process.stdout })
+const readline = require('readline'), rl = readline.createInterface({ input: process.stdin, output: process.stdout })
 
 let questions = [
         {question: 'Qaysi method elementi arrayyi bowiga qowadi? \nA: Push, \nB: Pop, \nC: Shift, \nD: Unshift\n', answer: 'D'},
@@ -18,7 +18,15 @@ questions.sort(() => Math.random() - .5)
 
 function recursive () {
     rl.question(`${count + 1}) ${questions[count].question}` , data => {
-		if (count == questions.length - 1) {res.correctAnswer = ball; res.wrongAnswer = questions.length - ball; console.table(res); return rl.close()}
+        if (count == questions.length - 1) {
+            if (['A', 'B', 'C', 'D'].includes(data)) {
+                if (data == questions[count].answer) ++ball
+                res.correctAnswer = ball; 
+                res.wrongAnswer = questions.length - ball; 
+                console.table(res); 
+                return rl.close()
+            } else return recursive()
+            } 
         else {
             if (['A', 'B', 'C', 'D'].includes(data)) {
                 if (data == questions[count].answer) ++ball
@@ -29,7 +37,7 @@ function recursive () {
     })
 }
 
-recursive()*/
+recursive()
 
 
 
