@@ -1,5 +1,5 @@
-// homework 1
-const readline = require('readline'), rl = readline.createInterface({ input: process.stdin, output: process.stdout })
+// homework 21-february
+/*const readline = require('readline'), rl = readline.createInterface({ input: process.stdin, output: process.stdout })
 
 let questions = [
         {question: 'Qaysi method elementi arrayyi bowiga qowadi? \nA: Push, \nB: Pop, \nC: Shift, \nD: Unshift\n', answer: 'D'},
@@ -37,7 +37,11 @@ function recursive () {
     })
 }
 
-recursive()
+recursive()*/
+
+// homework 22-february
+
+
 
 
 
