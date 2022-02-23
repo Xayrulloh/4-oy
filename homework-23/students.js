@@ -38,7 +38,16 @@ if (toDo === 'GET') {
             }
         }
         students.forEach(el => el.totalScore ? '' : el.totalScore = 0)
-        console.log(`student list`);
+        let temp = 0
+        for (let a = 0; a < students.length; a++) {
+            for (let b = 0; b < students.length; b++) {
+                if (students[a].totalScore > students[b].totalScore) {
+                    temp = students[a]
+                    students[a] = students[b]
+                    students[b] = temp
+                }
+            }
+        }
         console.table(students);
     }
 }
@@ -59,9 +68,10 @@ if (toDo === 'DELETE') {
 if (toDo === 'PUT') {
     if (who && change) {
         if (isNaN(+change)) {
-            students.filter(el => el.studentId === +who ? el.studentName = change : '')
+            let originName = ''
+            students.filter(el => {if (el.studentId === +who) el.studentName = change; originName = el.studentName})
             fs.writeFileSync('./students.json', JSON.stringify(students));
-            console.log(`${who} changed to ${change}`);
+            console.log(`${originName} changed to ${change}`);
         } else console.log('You entered not a string');
     } else {
         console.log('Deeng Syntax error');
