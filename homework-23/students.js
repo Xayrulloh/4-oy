@@ -57,6 +57,7 @@ if (toDo === 'DELETE') {
         let studentsCopy = [], scoresCopy = [], name = ''
         students.filter(el => {if(el.studentId == who) {name = el.studentName} else studentsCopy.push(el)})
         scores.filter(el => el.studentId != who ? scoresCopy.push(el) : '')
+        if (students.length === studentsCopy.length) return console.log('this student not exist');
         fs.writeFileSync('./students.json', JSON.stringify(studentsCopy))
         fs.writeFileSync('./infoStudents.json', JSON.stringify(scoresCopy))
         console.log(`${name} deleted successfully`);
