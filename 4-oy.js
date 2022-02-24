@@ -39,10 +39,29 @@ function recursive () {
 
 recursive()*/
 
-// homework 22-february
+// OS module
+/*const os = require('os')
+console.log("CPU architecture: " + os.arch());
 
+console.log("Free memory: " + os.freemem()/1024/1024);
 
+console.log('Total memory ' + os.totalmem()/1024/1024);
 
+console.log('Ip addres' + os.networkInterfaces()['Radmin VPN'][2].address);
+
+console.log('on since ' +(os.uptime()/60 | 0) + ' minute ');
+
+console.log('OS default directory for temp files : ' + os.tmpdir ());
+
+console.log("Endianness of system: " + os.endianness());
+  
+console.log("Hostname: " + os.hostname());
+  
+console.log("Operating system name: " + os.type());
+  
+console.log('operating system platform: ' + os.platform());
+  
+console.log('OS release : ' + os.release());*/
 
 
 
