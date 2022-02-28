@@ -1,0 +1,29 @@
+[
+    {
+        "expanseId": 1,
+        "amount": 450,
+        "expansePurpose": {
+            "purposeId": 1,
+            "purpose": "oziq-ovqat"
+        },
+        "date": "2022-02-23"
+    },
+    {
+        "expanseId": 2,
+        "amount": 500,
+        "expansePurpose": {
+            "purposeId": 3,
+            "purpose": "qurilish"
+        },
+        "date": "2022-02-23"
+    },
+    {
+        "expanseId": 3,
+        "amount": 100,
+        "expansePurpose": {
+            "purposeId": 2,
+            "purpose": "transport"
+        },
+        "date": "2022-02-23"
+    }
+]

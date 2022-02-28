@@ -63,8 +63,12 @@ console.log('operating system platform: ' + os.platform());
   
 console.log('OS release : ' + os.release());*/
 
+let arr = [1, 1, 1, 1, 2, 2, 2, 3, 3]
 
-
+for (let a = 2; a < arr.length; a++) {
+    if (arr[a] == arr[a - 2]) {arr[a - 2] = '-'}
+}
+console.log(arr);
 
 
 
