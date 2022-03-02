@@ -1,0 +1,9 @@
+[
+    {"foodId":1, "foodName":"Cola"},
+    {"foodId":2, "foodName":"Fanta"},
+    {"foodId":3, "foodName":"Burger-Cheese"},
+    {"foodId":4, "foodName":"Chicken-Togora"},
+    {"foodId":5, "foodName":"Chicken-Wings"},
+    {"foodId":6, "foodName":"Combo"},
+    {"foodId":7, "foodName":"Spinner"}
+]
