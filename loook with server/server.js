@@ -76,6 +76,7 @@ app.put('/users', async(req, res) => {
             if (username && username.length <= 30 && !username.trim().includes(' ') && /^[A-Za-z\s]*$/.test(username) && contact.toString().match('^998[389][012345789][0-9]{7}$')) {
                 user.name = username
                 user.phone = contact
+
                 fs.writeFileSync(path.join(__dirname, 'database', 'users.json'), JSON.stringify(users))
                 res.json({
                     status: 200,
@@ -120,9 +121,11 @@ app.put('/orders', async(req, res) => {
 app.delete('/users', async(req, res) => {
     let {userId} = await req.body
     let simple = users.find(el => el.clientId == userId)
+    orders = orders.filter(el => el.userId != simple.clientId)
     if (simple) {
         users = users.filter(el => el != simple)
         fs.writeFileSync(path.join(__dirname, 'database', 'users.json'), JSON.stringify(users))
+        fs.writeFileSync(path.join(__dirname, 'database', 'orders.json'), JSON.stringify(orders))
         res.json({
             status: 200,
             message: 'deleted'

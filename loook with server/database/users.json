@@ -1,1 +1,5 @@
-[{"clientId":1,"name":"Xayrulloh","phone":998900088213},{"clientId":2,"name":"Ahror","phone":998900088213},{"clientId":3,"name":"Donishmand","phone":998900088213}]
+[
+    {"clientId":1,"name":"Xayrulloh","phone":998900088213},
+    {"clientId":2,"name":"Ahror","phone":998900088213},
+    {"clientId":3,"name":"Donishmand","phone":998900088213}
+]
