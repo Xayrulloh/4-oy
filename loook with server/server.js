@@ -8,7 +8,7 @@ app.get('/', (req, res) => res.render('./index'))
 app.get('/users', (req, res) => res.json(users))
 app.get('/foods', (req, res) => res.json(foods))
 app.get('/orders', (req, res) => {
-    const arr = []
+        const arr = []
     for (let order of orders) {
         let obj = {}
         obj.orderId = order.orderId

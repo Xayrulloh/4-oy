@@ -5,7 +5,7 @@ getUsers()
 submitUsers.onclick = async(even) => {
     even.preventDefault()
     try {
-        const test = await fetch('http://localhost:5000/users', {
+        const test = await fetch('http://192.168.137.1:5000/users', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -29,14 +29,14 @@ submitUsers.onclick = async(even) => {
 }
 
 async function showFoods(l) {
+    ordersList.innerHTML = null
     show.textContent = 'client id:'
     userHeader.textContent = 'customer:  ' + l.children[0].textContent
     clientId.textContent =  l.children[0].getAttribute('id')
-    orders = await (await fetch('http://localhost:5000/orders')).json()
+    orders = await (await fetch('http://192.168.137.1:5000/orders')).json()
     orders = orders.filter(el => el.userId == +clientId.textContent)
 
     if (orders.length) {
-        ordersList.innerHTML = null
         for (let ordeR of orders) {
             ordersList.innerHTML += `<li class="order-item"><img src="./img/${ordeR['foodId']}.jpeg"><div><span class="order-name">${ordeR['foodId']}</span><span class="order-count">${ordeR.count}</span></div></li>`
         }
@@ -49,7 +49,7 @@ submitFoods.onclick = async(even) => {
     let [food, count] = [foodsSelect.value, foodsCount.value]
     if (clientId.textContent) {
         try {
-            const test = await fetch('http://localhost:5000/orders', {
+            const test = await fetch('http://192.168.137.1:5000/orders', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -67,7 +67,7 @@ submitFoods.onclick = async(even) => {
             alert(error)
         }
         
-        orders = await (await fetch('http://localhost:5000/orders')).json()
+        orders = await (await fetch('http://192.168.137.1:5000/orders')).json()
         orders = orders.filter(el => el.userId == +clientId.textContent)
 
         if (orders.length) {
@@ -84,7 +84,7 @@ submitFoods.onclick = async(even) => {
 
 
 async function getUsers() {
-    users = await fetch('http://localhost:5000/users')
+    users = await fetch('http://192.168.137.1:5000/users')
     users = await users.json()
     for(let csr of users) {
         list.innerHTML += `<li class="customer-item"><span id="${csr['clientId']}" class="customer-name">${csr['name']}</span><a class="customer-phone" href="tel:+${csr['phone']}">+${csr['phone']}</a></li>`
