@@ -1,0 +1,107 @@
+[
+    {
+        "who": "1-3",
+        "allChats": [
+            {
+                "id": "1",
+                "message": "Qalesiz tanishse boladmi",
+                "time": "22:47:48"
+            },
+            {
+                "id": "3",
+                "message": "Chunmadm km bu",
+                "time": "22:47:48"
+            },
+            {
+                "id": "1",
+                "message": "Ozizci",
+                "time": "22:47:48"
+            },
+            {
+                "id": "3",
+                "message": "Block",
+                "time": "22:47:48"
+            }
+        ]
+    },
+    {
+        "who": "2-4",
+        "allChats": [
+            {
+                "id": "4",
+                "message": "Nima gap tentak",
+                "time": "22:47:48"
+            },
+            {
+                "id": "2",
+                "message": "Chunmadm km bu",
+                "time": "22:47:48"
+            },
+            {
+                "id": "4",
+                "message": "Uzur oka prankidi",
+                "time": "22:47:48"
+            },
+            {
+                "id": "2",
+                "message": "Gaday!!",
+                "time": "22:47:48"
+            }
+        ]
+    },
+    {
+        "who": "4-1",
+        "allChats": [
+            {
+                "id": "1",
+                "message": "Nima gap tentak",
+                "time": "22:47:48"
+            },
+            {
+                "id": "4",
+                "message": "Chunmadm km bu",
+                "time": "22:47:48"
+            },
+            {
+                "id": "1",
+                "message": "Uzur oka prankidi",
+                "time": "22:47:48"
+            },
+            {
+                "id": "4",
+                "message": "Gaday!!",
+                "time": "22:47:48"
+            },
+            {
+                "id": 1,
+                "message": "salom \n",
+                "time": "12:25:48 "
+            }
+        ]
+    },
+    {
+        "who": "3-4",
+        "allChats": [
+            {
+                "id": "3",
+                "message": "Nima gap tentak",
+                "time": "22:47:48"
+            },
+            {
+                "id": "4",
+                "message": "Chunmadm km bu",
+                "time": "22:47:48"
+            },
+            {
+                "id": "3",
+                "message": "Uzur oka prankidi",
+                "time": "22:47:48"
+            },
+            {
+                "id": "4",
+                "message": "Gaday!!",
+                "time": "22:47:48"
+            }
+        ]
+    }
+]

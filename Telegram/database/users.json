@@ -1,0 +1,56 @@
+[
+    {
+        "username": "Xayrulloh",
+        "userId": 1,
+        "password": "2002",
+        "age": 19,
+        "gender": "male",
+        "time": "09:18:40 ",
+        "image": "https://www.bootdey.com/img/Content/avatar/avatar7.png"
+    },
+    {
+        "username": "Abror",
+        "userId": 2,
+        "password": "2006",
+        "age": 15,
+        "gender": "male",
+        "time": "09:18:36 ",
+        "image": "https://www.bootdey.com/img/Content/avatar/avatar2.png"
+    },
+    {
+        "username": "Ahror",
+        "userId": 3,
+        "password": "2006",
+        "age": 15,
+        "gender": "male",
+        "time": "22:04:40 ",
+        "image": "https://www.bootdey.com/img/Content/avatar/avatar2.png"
+    },
+    {
+        "username": "bomagur",
+        "password": "aaaa",
+        "age": "17",
+        "gender": "female",
+        "userId": 4,
+        "time": "12:25:29 ",
+        "image": "https://bootdey.com/img/Content/avatar/avatar8.png"
+    },
+    {
+        "username": "Sayfulloh",
+        "password": "2006",
+        "age": "16",
+        "gender": "male",
+        "userId": 5,
+        "time": "18:10:57 ",
+        "image": "https://bootdey.com/img/Content/avatar/avatar1.png"
+    },
+    {
+        "username": "komiljon",
+        "password": "12345678",
+        "age": "23",
+        "gender": "male",
+        "userId": 6,
+        "time": "09:27:10 ",
+        "image": "https://bootdey.com/img/Content/avatar/avatar6.png"
+    }
+]
