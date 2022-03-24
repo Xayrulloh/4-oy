@@ -1,0 +1,52 @@
+body{
+    background-color: rgba(46, 47, 48, 0.5);
+}
+
+form{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    margin-right: 20px;
+}
+
+ul{
+    height: 500px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+li{
+    width: 800px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    background-color: #4f5353;
+
+}
+
+.user_img{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.user_imgm{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.test{
+    display: flex;
+}
+
+object{
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+}
