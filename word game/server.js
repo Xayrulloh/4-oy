@@ -1,5 +1,4 @@
 const express = require('express'), app = express(), path = require('path'), fs = require('fs'), PORT = process.env.PORT ?? 5000, multer = require("multer")
-const { json } = require('express')
 let users = require('./database/users.json'), started = require('./database/started.json'), words = require('./database/words.json')
 
 app.use(express.static(path.join(__dirname, 'public')))
